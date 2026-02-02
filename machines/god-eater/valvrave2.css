@@ -1,0 +1,114 @@
+/* 戻るリンク */
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #fff;
+}
+
+/* 情報カード */
+.info-card {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.info-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+.info-card h3 {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.info-content {
+    padding: 0 8px;
+}
+
+/* ハイライトテキスト */
+.highlight {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4ecdc4;
+    margin-bottom: 8px;
+}
+
+.highlight.confirm {
+    color: #ff6b6b;
+}
+
+/* 注釈 */
+.note {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* 比率ボックス */
+.ratio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ratio-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #0a0a0a;
+    border-radius: 8px;
+}
+
+.ratio-row .label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.ratio-row .value {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+/* 高設定濃厚カード */
+.info-card.high-setting {
+    border-color: #ff6b6b;
+    background: linear-gradient(145deg, #1f1515, #0d0d0d);
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .info-card {
+        padding: 20px 16px;
+    }
+
+    .highlight {
+        font-size: 1.1rem;
+    }
+
+    .ratio-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .ratio-row .value {
+        font-size: 0.9rem;
+    }
+}
