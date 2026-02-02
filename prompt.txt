@@ -1,0 +1,40 @@
+下記ディレクトリ構成で静的サイトを作成しています。
+
+C:.
+│  index.html
+│  
+├─css
+│      style.css
+│      
+├─images
+│      god-eater.jpg
+│      hokuto-tensei2.jpg
+│      kaguya.jpg
+│      tokyo-ghoul.jpg
+│      tokyo-revengers.jpg
+│      valvrave2.jpg
+│
+└─machines
+    ├─god-eater
+    │      index.html
+    │      valvrave2.css
+    │
+    ├─hokuto-tensei2
+    │      index.html
+    │      valvrave2.css
+    │
+    ├─kaguya
+    │      index.html
+    │      valvrave2.css
+    │
+    ├─tokyo-ghoul
+    │      index.html
+    │      valvrave2.css
+    │
+    ├─tokyo-revengers
+    │      index.html
+    │      valvrave2.css
+    │
+    └─valvrave2
+            index.html
+            valvrave2.css
