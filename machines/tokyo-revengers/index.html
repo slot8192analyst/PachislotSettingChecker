@@ -3,89 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>革命機ヴァルヴレイヴ2 設定判別 | パチスロ設定判別チェッカー</title>
+    <title>東京リベンジャーズ 設定判別 | パチスロ設定判別要素</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="machine.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="machine-header">
             <p class="back-link"><a href="../../index.html">← 機種選択に戻る</a></p>
-            <h1>革命機ヴァルヴレイヴ2</h1>
+            <div class="machine-header-image">
+                <img src="../../images/tokyo-revengers.jpg" alt="東京リベンジャーズ">
+            </div>
             <p class="subtitle">設定判別ポイント</p>
         </header>
 
         <main>
-            <!-- ①CZ・ボーナス終了画面 -->
             <section class="info-card">
-                <h2>CZ・ボーナス終了画面</h2>
+                <h2>判別の手順</h2>
                 <div class="info-content">
-                    <h3>デフォルト出現割合</h3>
-                    <p class="highlight">設定1〜6：約74%〜約60%</p>
-                    <p class="note">低設定ほどデフォルトが出やすい</p>
+                    <p class="note">マイスロログイン、共通ベルカウント、初当たり等当選確率</p>
+                    <button class="calc-button" id="openCalc">通常時G数を計算する</button>
+                </div>
+            </section>
+            <!-- 判別ポイント概要 -->
+            <section class="info-card">
+                <h2>判別の優先度</h2>
+                <div class="info-content">
+                    <p class="note">①②をメインに判別、③も強力。④〜⑩は要素としては強いが、出現率が低い</p>
                 </div>
             </section>
 
-            <!-- ②サブ液晶の奇偶示唆 -->
+            <!-- ①共通15枚ベル確率 -->
             <section class="info-card">
-                <h2>サブ液晶の奇偶示唆</h2>
+                <h2>①共通15枚ベル確率</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：1/99.3〜1/77.1</p>
+                </div>
+            </section>
+
+            <!-- ②終了画面 -->
+            <section class="info-card">
+                <h2>②終了画面</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">奇数設定</span>
-                            <span class="value">奇数 55% : 偶数 45%</span>
+                            <span class="label">デフォルト</span>
+                            <span class="value">設定1〜6：約34%〜約21%</span>
                         </div>
                         <div class="ratio-row">
-                            <span class="label">偶数設定</span>
-                            <span class="value">奇数 45% : 偶数 55%</span>
+                            <span class="label">高設定示唆(強)</span>
+                            <span class="value">設定1〜6：約6%〜約15%</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ③ハラキリドライブ2連荘以上割合 -->
+            <!-- ③朝一/上位CZ後の天国・モードA選択率 -->
             <section class="info-card">
-                <h2>ハラキリドライブ2連荘以上割合</h2>
-                <div class="info-content">
-                    <p class="highlight">設定1〜6：約10%〜約20%</p>
-                    <p class="note">高設定ほど2連荘しやすい</p>
-                </div>
-            </section>
-
-            <!-- ④ハラキリドライブ発生率 -->
-            <section class="info-card">
-                <h2>ハラキリドライブ発生率</h2>
+                <h2>③朝一/上位CZ後の天国・モードA選択率</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">AT 6〜10セット</span>
-                            <span class="value">設定1〜6：約4%〜約8%</span>
+                            <span class="label">天国</span>
+                            <span class="value">設定1〜6：9.4%〜25%</span>
                         </div>
                         <div class="ratio-row">
-                            <span class="label">AT 11セット以降</span>
-                            <span class="value">設定1〜6：約13%〜約26%</span>
+                            <span class="label">モードA</span>
+                            <span class="value">設定1〜6：34.4%〜18.8%</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ⑤実質的なAT直撃確率 -->
+            <!-- ④REVENGEフリーズ発生率 -->
             <section class="info-card">
-                <h2>実質的なAT直撃確率</h2>
+                <h2>④REVENGEフリーズ発生率</h2>
                 <div class="info-content">
-                    <p class="highlight">設定1〜6：約1/10000〜約1/6000</p>
-                    <p class="note">※AT初当り+約180枚の獲得履歴</p>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">決戦前夜3,4スルー時（ノイズ発生）</span>
+                            <span class="value">0.8%〜6.2%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">東卍チャンス2,3スルー時（REVENGE発生）</span>
+                            <span class="value">2.3%〜5.9%</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!-- ⑥高設定濃厚演出 -->
-            <section class="info-card high-setting">
-                <h2>高設定濃厚演出</h2>
+            <!-- ⑤CZ確率 -->
+            <section class="info-card">
+                <h2>⑤CZ確率</h2>
                 <div class="info-content">
-                    <h3>AT10セット毎のラウンド画面</h3>
-                    <p class="highlight confirm">20セット以降は設定4以上確定画面</p>
-                    <p class="note">の出現率が大幅アップ</p>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">ミッドナイトモード初当たり</span>
+                            <span class="value">1/1278〜1/990</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">稀咲陰謀初当り</span>
+                            <span class="value">1/14520〜1/5841</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <!-- ⑥黒い衝動突入率 -->
+            <section class="info-card">
+                <h2>⑥黒い衝動突入率</h2>
+                <div class="info-content">
+                    <h3>リベンジチャンス成功契機</h3>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">ベル・リプレイ</span>
+                            <span class="value">4〜16%</span>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 16px;">天上天下唯我独尊 成功契機</h3>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">はずれ</span>
+                            <span class="value">12〜28%</span>
+                            <span class="label">ベル・リプレイ</span>
+                            <span class="value">2〜5%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑦東卍CHANCE中の東卍RUSH当選率 -->
+            <section class="info-card">
+                <h2>⑦東卍CHANCE中の東卍RUSH当選率</h2>
+                <div class="info-content">
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">スイカ・弱チェ成功率</span>
+                            <span class="value">設定1〜6：約10.2%〜約16.4%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑧東卍RUSH確率 -->
+            <section class="info-card">
+                <h2>⑧東卍RUSH確率</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：1/482〜1/373</p>
+                </div>
+            </section>
+
+            <!-- ⑨周期別平均当選率 -->
+            <section class="info-card">
+                <h2>⑨周期別平均当選率</h2>
+                <div class="info-content">
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">2周期当選率</span>
+                            <span class="value">設定1〜6：20.5%〜27.8%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">3周期当選率</span>
+                            <span class="value">設定1〜6：39.7%〜51.9%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ⑩ATセットストック確率 -->
+            <section class="info-card">
+                <h2>⑩ATセットストック確率</h2>
+                <div class="info-content">
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">1セット当選率</span>
+                            <span class="value">設定1〜6：4.7%〜8.2%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">3セット当選率</span>
+                            <span class="value">設定1〜6：0.4%〜2.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 共通15枚ベル判別方法 -->
+            <section class="info-card">
+                <h2>共通15枚ベル判別方法</h2>
+                <div class="info-content">
+                    <h3>通常時</h3>
+                    <p class="note">上段ぞろいの15枚ベル</p>
+
+                    <h3 style="margin-top: 12px;">AT中</h3>
+                    <p class="note">押し順ナビ無し → 上段ぞろいベル</p>
+                    <p class="note">押し順ナビあり → セグなしの15枚ベル</p>
+
+                    <h3 style="margin-top: 12px;">補足</h3>
+                    <p class="note">AT中まで数えられれば判別精度が上がるが、通常時のみのカウントでも可。</p>
+                    <p class="note" style="color: var(--color-danger);">※通常時・AT中共にマイスロには反映されないため注意</p>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>設定別データ</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="Revengers_3.jpg" alt="設定別データ">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>設定別ノイズ・フリーズ発生確率</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="Revengers_4.jpg" alt="設定別ノイズ・フリーズ発生確率">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>AT終了画面の示唆</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="Revengers_5.jpg" alt="AT終了画面の示唆">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>ATラウンド開始画面の示唆</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="Revengers_6.jpg" alt="ATラウンド開始画面の示唆">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>上位中ラウンド開始画面・サブ液晶の示唆</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="Revengers_7.jpg" alt="上位中ラウンド開始画面・サブ液晶の示唆">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 参考文献 -->
+            <section class="references">
+                <h3>参考文献</h3>
+                <ul>
+                    <li><a href="https://note.com/slotiger/n/nc36789b03a20#9b517d3f-8f77-4721-a534-9eee33bfc76b" target="_blank" rel="noopener">※1：note - スマスロ 東京リベンジャーズ 設定差考察 まとめ (スロタイガー)</a></li>
+                    <li><a href="https://x.com/divo_x_central/status/1942401382180610399" target="_blank" rel="noopener">X - L東京リベンジャーズまとめ (島国★購買部)</a></li>
+                </ul>
             </section>
         </main>
 
@@ -93,5 +263,106 @@
             <p>&copy; 2026 PachislotSettingChecker</p>
         </footer>
     </div>
+
+    <!-- 画像モーダル -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="modalClose">×</span>
+        <img src="" alt="拡大画像" id="modalImage">
+        <p class="modal-hint">タップで閉じる</p>
+    </div>
+
+    <!-- 計算機モーダル -->
+    <div class="calc-modal" id="calcModal">
+        <span class="calc-close" id="calcClose">×</span>
+        <div class="calc-content">
+            
+            <!-- ステップ1: 通常時G数計算 -->
+            <div class="calc-step active" id="calcStep1">
+                <h3>通常時G数計算</h3>
+                <div class="calc-input-group">
+                    <label for="totalSpins">総回転数</label>
+                    <input type="number" id="totalSpins" placeholder="例：3000">
+                </div>
+                <div class="calc-input-group">
+                    <label for="currentDiff">現時点の差枚数</label>
+                    <input type="number" id="currentDiff" placeholder="例：500（マイナスは-500）">
+                </div>
+                <div class="calc-input-group">
+                    <label for="upperAtDiff">上位ATの獲得枚数</label>
+                    <input type="number" id="upperAtDiff" placeholder="例：1000">
+                </div>
+                <button class="calc-submit" id="calcStep1Submit">計算する</button>
+                <div class="calc-result" id="calcResult1">
+                    <p class="calc-result-label">通常時回転数</p>
+                    <p class="calc-result-value" id="calcResultValue1">0 G</p>
+                </div>
+                <div class="calc-nav">
+                    <button class="calc-next" id="goToStep2">メニュー情報を入力 →</button>
+                </div>
+            </div>
+        
+            <!-- ステップ2: メニュー情報入力 -->
+            <div class="calc-step" id="calcStep2">
+                <h3>メニュー情報入力</h3>
+                <div class="calc-input-group">
+                    <label for="midnightCount">MID NIGHT回数</label>
+                    <input type="number" id="midnightCount" placeholder="例：5">
+                </div>
+                <div class="calc-input-group">
+                    <label for="kissakiCount">稀咲陰謀回数</label>
+                    <input type="number" id="kissakiCount" placeholder="例：1">
+                </div>
+                <div class="calc-input-group">
+                    <label for="tomanChanceCount">東卍CHANCE回数</label>
+                    <input type="number" id="tomanChanceCount" placeholder="例：8">
+                </div>
+                <div class="calc-input-group">
+                    <label for="tomanRushCount">東卍RUSH回数</label>
+                    <input type="number" id="tomanRushCount" placeholder="例：3">
+                </div>
+                <div class="calc-input-group">
+                    <label for="tomanBurstCount">東卍BURST回数</label>
+                    <input type="number" id="tomanBurstCount" placeholder="例：1">
+                </div>
+                <button class="calc-submit" id="calcStep2Submit">確率を計算する</button>
+                
+                <div class="calc-result-grid" id="calcResult2">
+                    <div class="calc-result-row">
+                        <span class="label">通常時G数</span>
+                        <span class="value" id="resultNormalG">-</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span class="label">MID NIGHT確率</span>
+                        <span class="value" id="resultMidnight">-</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span class="label">稀咲陰謀確率</span>
+                        <span class="value" id="resultKissaki">-</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span class="label">東卍CHANCE確率</span>
+                        <span class="value" id="resultTomanChance">-</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span class="label">東卍RUSH確率</span>
+                        <span class="value" id="resultTomanRush">-</span>
+                    </div>
+                    <div class="calc-result-row">
+                        <span class="label">東卍BURST確率</span>
+                        <span class="value" id="resultTomanBurst">-</span>
+                    </div>
+                </div>
+                
+                <div class="calc-nav">
+                    <button class="calc-back" id="backToStep1">← 戻る</button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/calc.js"></script>
 </body>
 </html>
