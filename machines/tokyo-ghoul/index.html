@@ -3,89 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>革命機ヴァルヴレイヴ2 設定判別 | パチスロ設定判別チェッカー</title>
+    <title>東京喰種 設定判別 | パチスロ設定判別要素まとめ</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="machine.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="machine-header">
             <p class="back-link"><a href="../../index.html">← 機種選択に戻る</a></p>
-            <h1>革命機ヴァルヴレイヴ2</h1>
+            <div class="machine-header-image">
+                <img src="../../images/tokyo-ghoul.jpg" alt="東京喰種">
+            </div>
             <p class="subtitle">設定判別ポイント</p>
         </header>
 
         <main>
-            <!-- ①CZ・ボーナス終了画面 -->
+            <!-- ①AT初当たり確率 -->
             <section class="info-card">
-                <h2>CZ・ボーナス終了画面</h2>
-                <div class="info-content">
-                    <h3>デフォルト出現割合</h3>
-                    <p class="highlight">設定1〜6：約74%〜約60%</p>
-                    <p class="note">低設定ほどデフォルトが出やすい</p>
-                </div>
-            </section>
-
-            <!-- ②サブ液晶の奇偶示唆 -->
-            <section class="info-card">
-                <h2>サブ液晶の奇偶示唆</h2>
+                <h2>①AT初当たり確率</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">奇数設定</span>
-                            <span class="value">奇数 55% : 偶数 45%</span>
+                            <span class="label">300G以内の当選割合</span>
+                            <span class="value">低設定43%〜高設定61%</span>
                         </div>
                         <div class="ratio-row">
-                            <span class="label">偶数設定</span>
-                            <span class="value">奇数 45% : 偶数 55%</span>
+                            <span class="label">800G以内の当選割合</span>
+                            <span class="value">低設定86%〜高設定96%</span>
+                        </div>
+                    </div>
+                    <p class="note" style="margin-top: 12px;">天国準備以上選択の割合に設定差があるためと思われる</p>
+                    <p class="note" style="color: var(--color-danger);">後ヅモの際、800以上ハマリが2回以上あれば要注意</p>
+                </div>
+            </section>
+
+            <!-- ②CZ初当たり確率 -->
+            <section class="info-card">
+                <h2>②CZ初当たり確率</h2>
+                <div class="info-content">
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">101G〜150Gでの当選</span>
+                            <span class="value">低設定25%〜高設定35%</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ③ハラキリドライブ2連荘以上割合 -->
+            <!-- ③大喰いのリゼ出現 -->
             <section class="info-card">
-                <h2>ハラキリドライブ2連荘以上割合</h2>
+                <h2>③大喰いのリゼ出現</h2>
                 <div class="info-content">
-                    <p class="highlight">設定1〜6：約10%〜約20%</p>
-                    <p class="note">高設定ほど2連荘しやすい</p>
+                    <p class="highlight">設定1〜6：1/2000〜1/1000</p>
                 </div>
             </section>
 
-            <!-- ④ハラキリドライブ発生率 -->
+            <!-- ④エピソードボーナス確率 -->
             <section class="info-card">
-                <h2>ハラキリドライブ発生率</h2>
+                <h2>④エピソードボーナス確率</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：1/6620〜1/2640</p>
+                </div>
+            </section>
+
+            <!-- ⑤ED中キャラカード -->
+            <section class="info-card">
+                <h2>⑤ED中キャラカード</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">AT 6〜10セット</span>
-                            <span class="value">設定1〜6：約4%〜約8%</span>
-                        </div>
-                        <div class="ratio-row">
-                            <span class="label">AT 11セット以降</span>
-                            <span class="value">設定1〜6：約13%〜約26%</span>
+                            <span class="label">赤(青文字)カードの出現率</span>
+                            <span class="value">低設定5%〜高設定20%を目安に</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ⑤実質的なAT直撃確率 -->
+            <!-- ⑥AT終了画面 -->
             <section class="info-card">
-                <h2>実質的なAT直撃確率</h2>
+                <h2>⑥AT終了画面</h2>
                 <div class="info-content">
-                    <p class="highlight">設定1〜6：約1/10000〜約1/6000</p>
-                    <p class="note">※AT初当り+約180枚の獲得履歴</p>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">高設定示唆(弱)</span>
+                            <span class="value">設定1〜3：2.5% / 設定4以上：7%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">高設定示唆(強)</span>
+                            <span class="value">設定1〜3：1% / 設定4以上：4%</span>
+                        </div>
+                    </div>
+                    <p class="note" style="margin-top: 12px;">高設定示唆(強)確認である程度粘れる要素</p>
                 </div>
             </section>
 
-            <!-- ⑥高設定濃厚演出 -->
-            <section class="info-card high-setting">
-                <h2>高設定濃厚演出</h2>
+            <!-- ⑦AT直撃確率 -->
+            <section class="info-card">
+                <h2>⑦AT直撃確率</h2>
                 <div class="info-content">
-                    <h3>AT10セット毎のラウンド画面</h3>
-                    <p class="highlight confirm">20セット以降は設定4以上確定画面</p>
-                    <p class="note">の出現率が大幅アップ</p>
+                    <p class="highlight">設定1〜6：1/28460〜1/7036</p>
+                    <p class="note">※リプレイ契機：通常時ゾーン・レア役以外で急に前兆が来るやつ</p>
                 </div>
+            </section>
+
+            <!-- ⑧AT引き戻し確率 -->
+            <section class="info-card">
+                <h2>⑧AT引き戻し確率</h2>
+                <div class="info-content">
+                    <p class="highlight">低設定〜高設定：7%〜13%</p>
+                    <p class="note" style="color: var(--color-danger);">※有馬ジャッジ後はほぼ引き戻さないため除外を推奨</p>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>設定示唆一覧</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="ghoul_1.jpg" alt="設定示唆一覧">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>簡易スペック表</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="ghoul_2.jpg" alt="簡易スペック表">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>モードについて</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="ghoul_3.jpg" alt="モードについて">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 参考文献 -->
+            <section class="references">
+                <h3>参考文献</h3>
+                <ul>
+                    <li><a href="https://note.com/slotiger/n/nff6a09297a9e?after_purchase=true&scrollpos=paywall" target="_blank" rel="noopener">note - スマスロ 東京喰種(グール) 設定差考察 まとめ (スロタイガー)</a></li>
+                    <li><a href="https://x.com/divo_x_central/status/1881976058049925532" target="_blank" rel="noopener">X - 東京喰種トーキョーグール (島国★購買部)</a></li>
+                </ul>
             </section>
         </main>
 
@@ -93,5 +156,14 @@
             <p>&copy; 2026 PachislotSettingChecker</p>
         </footer>
     </div>
+
+    <!-- 画像モーダル -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="modalClose">×</span>
+        <img src="" alt="拡大画像" id="modalImage">
+        <p class="modal-hint">タップで閉じる</p>
+    </div>
+
+    <script src="../../js/modal.js"></script>
 </body>
 </html>
