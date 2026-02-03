@@ -3,89 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>革命機ヴァルヴレイヴ2 設定判別 | パチスロ設定判別チェッカー</title>
+    <title>ゴッドイーター リザレクション 設定判別 | パチスロ設定判別要素まとめ</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="machine.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="machine-header">
             <p class="back-link"><a href="../../index.html">← 機種選択に戻る</a></p>
-            <h1>革命機ヴァルヴレイヴ2</h1>
+            <div class="machine-header-image">
+                <img src="../../images/god-eater.jpg" alt="ゴッドイーター リザレクション">
+            </div>
             <p class="subtitle">設定判別ポイント</p>
         </header>
 
         <main>
-            <!-- ①CZ・ボーナス終了画面 -->
+            <!-- ①ストーリー中終了ボイス -->
             <section class="info-card">
-                <h2>CZ・ボーナス終了画面</h2>
-                <div class="info-content">
-                    <h3>デフォルト出現割合</h3>
-                    <p class="highlight">設定1〜6：約74%〜約60%</p>
-                    <p class="note">低設定ほどデフォルトが出やすい</p>
-                </div>
-            </section>
-
-            <!-- ②サブ液晶の奇偶示唆 -->
-            <section class="info-card">
-                <h2>サブ液晶の奇偶示唆</h2>
+                <h2>①ストーリー中終了ボイス</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">奇数設定</span>
-                            <span class="value">奇数 55% : 偶数 45%</span>
+                            <span class="label">デフォルト選択率</span>
+                            <span class="value">設定1〜5：約60% / 設定6：約40%</span>
                         </div>
                         <div class="ratio-row">
-                            <span class="label">偶数設定</span>
-                            <span class="value">奇数 45% : 偶数 55%</span>
+                            <span class="label">高設定示唆(強)</span>
+                            <span class="value">低設定：3% / 高設定：6%程度</span>
+                        </div>
+                    </div>
+                    <p class="note" style="margin-top: 12px;">デフォルトが明らかに少ない場合は期待</p>
+                </div>
+            </section>
+
+            <!-- ②有利区間切断時の神堕突入率 -->
+            <section class="info-card">
+                <h2>②有利区間切断時の神堕突入率</h2>
+                <div class="info-content">
+                    <p class="note">1回でも確認できれば5,6の可能性が大幅アップ。</p>
+                    <p class="note">2回以上神堕突入履歴があれば、他の要素が悪くない限り打ちたい要素</p>
+                </div>
+            </section>
+
+            <!-- ③AT初当たり確率 -->
+            <section class="info-card">
+                <h2>③AT初当たり確率</h2>
+                <div class="info-content">
+                    <h3>ゾーン選択率に注目</h3>
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">200G</span>
+                            <span class="value">低設定約7%〜高設定約14%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">450G</span>
+                            <span class="value">低設定約9%〜高設定約16%</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ③ハラキリドライブ2連荘以上割合 -->
+            <!-- ④CZ初当たり確率 -->
             <section class="info-card">
-                <h2>ハラキリドライブ2連荘以上割合</h2>
-                <div class="info-content">
-                    <p class="highlight">設定1〜6：約10%〜約20%</p>
-                    <p class="note">高設定ほど2連荘しやすい</p>
-                </div>
-            </section>
-
-            <!-- ④ハラキリドライブ発生率 -->
-            <section class="info-card">
-                <h2>ハラキリドライブ発生率</h2>
+                <h2>④CZ初当たり確率</h2>
                 <div class="info-content">
                     <div class="ratio-box">
                         <div class="ratio-row">
-                            <span class="label">AT 6〜10セット</span>
-                            <span class="value">設定1〜6：約4%〜約8%</span>
-                        </div>
-                        <div class="ratio-row">
-                            <span class="label">AT 11セット以降</span>
-                            <span class="value">設定1〜6：約13%〜約26%</span>
+                            <span class="label">低確チャンス目での当選</span>
+                            <span class="value">設定1〜6：15.8%〜24.9%</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ⑤実質的なAT直撃確率 -->
+            <!-- ⑤強チェ直撃 -->
             <section class="info-card">
-                <h2>実質的なAT直撃確率</h2>
+                <h2>⑤強チェリー直撃</h2>
                 <div class="info-content">
-                    <p class="highlight">設定1〜6：約1/10000〜約1/6000</p>
-                    <p class="note">※AT初当り+約180枚の獲得履歴</p>
+                    <p class="highlight">設定1〜6：0.4%〜5.9%</p>
+                    <p class="note">ほぼ見られないが、確認できたら強い要素</p>
                 </div>
             </section>
 
-            <!-- ⑥高設定濃厚演出 -->
-            <section class="info-card high-setting">
-                <h2>高設定濃厚演出</h2>
+            <section class="info-card">
+                <h2>小役別CZ当選率</h2>
                 <div class="info-content">
-                    <h3>AT10セット毎のラウンド画面</h3>
-                    <p class="highlight confirm">20セット以降は設定4以上確定画面</p>
-                    <p class="note">の出現率が大幅アップ</p>
+                    <div class="setting-image">
+                        <img src="eater_1.png" alt="小役別CZ当選率">
+                    </div>
                 </div>
+            </section>
+
+            <section class="info-card">
+                <h2>設定差一覧</h2>
+                <div class="info-content">
+                    <div class="setting-image">
+                        <img src="eater_2.png" alt="設定差一覧">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 参考文献 -->
+            <section class="references">
+                <h3>参考文献</h3>
+                <ul>
+                    <li><a href="https://note.com/slotiger/n/n630c31e7a334#7d46e7a6-e183-4af0-9c59-bef3598ddad2" target="_blank" rel="noopener">note - スマスロ ゴッドイーター 設定差考察 まとめ (スロタイガー)</a></li>
+                </ul>
             </section>
         </main>
 
@@ -93,5 +117,14 @@
             <p>&copy; 2026 PachislotSettingChecker</p>
         </footer>
     </div>
+
+    <!-- 画像モーダル -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="modalClose">×</span>
+        <img src="" alt="拡大画像" id="modalImage">
+        <p class="modal-hint">タップで閉じる</p>
+    </div>
+
+    <script src="../../js/modal.js"></script>
 </body>
 </html>
