@@ -3,7 +3,7 @@
    =================================== */
 :root {
     /* フォントサイズ - baseを変えると全体が変わる */
-    --font-size-base: 10px;
+    --font-size-base: 9px;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.85rem;
     --font-size-md: 1rem;
