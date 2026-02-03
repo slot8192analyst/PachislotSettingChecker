@@ -3,47 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>北斗の拳 転生の章2 設定判別 | パチスロ設定判別チェッカー</title>
+    <title>北斗の拳 転生の章2 設定判別 | パチスロ設定判別要素</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="machine.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="machine-header">
             <p class="back-link"><a href="../../index.html">← 機種選択に戻る</a></p>
-            <h1>北斗の拳 転生の章2</h1>
+            <div class="machine-header-image">
+                <img src="../../images/hokuto-tensei2.jpg" alt="北斗の拳 転生の章2">
+            </div>
             <p class="subtitle">設定判別ポイント</p>
         </header>
 
         <main>
-            <!-- ①設定判別情報1 -->
+            <!-- ①規定あべし896以内での当選 -->
             <section class="info-card">
-                <h2>設定別データ①</h2>
+                <h2>①規定あべし896以内での当選</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：70%〜96%</p>
+                    <p class="note" style="color: var(--color-danger);">896を超えたならほぼ赤信号(1200G越えの当選履歴があるとほぼアウト)</p>
+                </div>
+            </section>
+
+            <!-- ②577~768あべしでの当選 -->
+            <section class="info-card">
+                <h2>②577〜768あべしでの当選</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：2%〜8%</p>
+                    <p class="note">確認できれば期待</p>
+                </div>
+            </section>
+
+            <!-- ③AT初当たり確率 -->
+            <section class="info-card">
+                <h2>③AT初当たり確率</h2>
+                <div class="info-content">
+                    <div class="ratio-box">
+                        <div class="ratio-row">
+                            <span class="label">〜400G</span>
+                            <span class="value">設定1〜6：63%〜73%</span>
+                        </div>
+                        <div class="ratio-row">
+                            <span class="label">〜850G</span>
+                            <span class="value">設定1〜6：91%〜98%</span>
+                        </div>
+                    </div>
+                    <p class="note" style="margin-top: 12px;">後ヅモの際の参考に</p>
+                </div>
+            </section>
+
+            <!-- ④筐体上部Bランプ -->
+            <section class="info-card">
+                <h2>④筐体上部Bランプ水色点灯以上</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：13%〜20%</p>
+                    <p class="note">※実践値</p>
+                </div>
+            </section>
+
+            <!-- ⑤上位AT引き戻し率 -->
+            <section class="info-card">
+                <h2>⑤上位AT引き戻し率</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：15%〜35%</p>
+                </div>
+            </section>
+
+            <!-- ⑥上位CZ「天撃」成功率 -->
+            <section class="info-card">
+                <h2>⑥上位CZ「天撃」成功率</h2>
+                <div class="info-content">
+                    <p class="highlight">設定1〜6：52%〜67%</p>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <h2>簡易スペック表</h2>
                 <div class="info-content">
                     <div class="setting-image">
-                        <img src="hokuto-tensei-settings_1.jpg" alt="設定別データ1">
+                        <img src="hokuto-tensei-settings_1.jpg" alt="簡易スペック表">
                     </div>
                 </div>
             </section>
 
-            <!-- ②設定判別情報2 -->
             <section class="info-card">
-                <h2>設定別データ②</h2>
+                <h2>設定別データ</h2>
                 <div class="info-content">
                     <div class="setting-image">
-                        <img src="hokuto-tensei-settings_2.jpg" alt="設定別データ2">
+                        <img src="hokuto-tensei-settings_2.jpg" alt="設定別データ">
                     </div>
                 </div>
             </section>
 
-            <!-- ③設定判別情報3 -->
             <section class="info-card">
-                <h2>設定別データ③</h2>
+                <h2>100Gごとのランプ示唆</h2>
                 <div class="info-content">
                     <div class="setting-image">
-                        <img src="hokuto-tensei-settings_3.jpg" alt="設定別データ3">
+                        <img src="hokuto-tensei-settings_3.jpg" alt="100Gごとのランプ示唆">
                     </div>
                 </div>
+            </section>
+
+            <!-- 参考文献 -->
+            <section class="references">
+                <h3>参考文献</h3>
+                <ul>
+                    <li><a href="https://note.com/slotiger/n/n9f02a525988e?after_purchase=true&scrollpos=paywall" target="_blank" rel="noopener">note - スマスロ 北斗の拳 転生の章2 設定差考察 まとめ (スロタイガー)</a></li>
+                    <li><a href="https://x.com/divo_x_central/status/1978011362195587298" target="_blank" rel="noopener">X - L北斗の拳　転生の章2 (島国★購買部)</a></li>
+                </ul>
             </section>
         </main>
 
@@ -51,5 +120,14 @@
             <p>&copy; 2026 PachislotSettingChecker</p>
         </footer>
     </div>
+
+    <!-- 画像モーダル -->
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close" id="modalClose">×</span>
+        <img src="" alt="拡大画像" id="modalImage">
+        <p class="modal-hint">タップで閉じる</p>
+    </div>
+
+    <script src="../../js/modal.js"></script>
 </body>
 </html>
